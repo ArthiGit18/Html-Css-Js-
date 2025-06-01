@@ -14,9 +14,9 @@ const Nav = () => {
                         <li><a href='/services'>Services</a></li>
                         <li><a href='/contact'>Contact</a></li>
                     </ul>
-                    <div className='nav_user'>
-                        <a href='/login'>Login</a>
-                        <a href='/signup'>Sign Up</a>
+                    <div className='nav_buttons'>
+                        <button><a href='/login'>Login</a></button>
+                        <button><a href='/signup'>Sign Up</a></button>
                     </div>
                 </nav>
             </div>
