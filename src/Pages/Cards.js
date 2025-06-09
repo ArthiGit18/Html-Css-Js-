@@ -16,9 +16,9 @@ const Cards = () => {
                         </p>
                     </div>
                     <div className='card'>
-                        <div className='card_img'>
+                        <a href="/css-tags"><div className='card_img'>
                             <img src='./assets/cards/2.png' alt='Service Icon' />
-                        </div>
+                        </div></a>
                         <h2>CSS - Cascading Style Sheets</h2>
                         <p>
                             CSS is used to style and layout web pages — for example, to change fonts, colors, spacing, and responsiveness.

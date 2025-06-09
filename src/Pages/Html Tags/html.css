@@ -1,0 +1,199 @@
+/* html page */
+.html-page {
+    width: 100%;
+    padding: 50px 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tags-table-section {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* h3 {
+    color: #333;
+} */
+
+
+
+
+
+.block-example {
+    background-color: #dff9fb;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #aaa;
+}
+
+.inline-block-example {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: #7ed6df;
+    margin: 5px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.inline-block-example:hover {
+    background-color: #22a6b3;
+    cursor: pointer;
+}
+
+.block-example:hover {
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+
+.examples h2,
+.intro h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+
+.intro ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+/* .examples h3 {
+    margin: 20px 0;
+} */
+
+code {
+    background-color: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #4CAF50;
+}
+
+.form-example {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+video,
+audio,
+img {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.html-container {
+    padding: 50px;
+    background-color: black;
+    color: white;
+
+}
+
+.accordion {
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 20px;
+    background-color: palegreen;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: green;
+    color: white;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.accordion-content {
+    padding: 16px;
+    background-color: gainsboro;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.accordion-content h2 {
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.inspiration {
+    background-color: grey;
+    padding: 24px;
+    margin: 20px 0;
+    border-left: 6px solid greenyellow;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 8px rgb(103, 255, 1);
+
+}
+
+.inspiration h2 {
+    color: greenyellow;
+    margin-bottom: 10px;
+}
+
+.inspiration p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.inspiration ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.inspiration li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.example {
+    background: #fff;
+    padding: 15px 30px;
+    border: 1px dashed #aaa;
+    margin-bottom: 20px;
+    color: #333;
+}

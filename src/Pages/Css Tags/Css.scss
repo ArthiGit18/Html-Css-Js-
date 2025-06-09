@@ -1,0 +1,525 @@
+.CSS_simple p {
+    color: #f6923b;
+}
+
+.CSS_simple h3 {
+    color: #f43f5e;
+}
+
+
+
+
+.CSS_first-child li:first-child {
+    font-weight: bold;
+    color: #0edee9;
+}
+
+.CSS_first-child ul li:nth-child(2) {
+    font-style: italic;
+}
+
+/* Pseudo-elements */
+.pseudo-element p::first-letter {
+    font-size: 24px;
+    color: #9333ea;
+}
+
+.pseudo-element p::after {
+    content: " ✨";
+}
+
+/* Attribute Selectors */
+input[type="text"] {
+    border: 2px solid #0ea5e9;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: #22c55e;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #15803d;
+}
+
+td a {
+    color: white;
+}
+
+.css_internal-section {
+    background-color: #f0fdf4;
+    padding: 20px;
+    margin-top: 20px;
+
+    h2 {
+        color: #15803d;
+    }
+
+    pre {
+        background-color: #dcfce7;
+        padding: 10px;
+        border-left: 4px solid #22c55e;
+        overflow-x: auto;
+    }
+
+    .css_output-box {
+        font-size: 18px;
+        color: #166534;
+        margin-top: 10px;
+    }
+}
+
+.css_external-section {
+    background-color: #f0f9ff;
+    padding: 20px;
+    margin-top: 20px;
+
+    h2 {
+        color: #0ea5e9;
+    }
+
+    pre {
+        background-color: #e0f2fe;
+        padding: 10px;
+        border-left: 4px solid #38bdf8;
+        overflow-x: auto;
+    }
+}
+
+// colors
+
+.css_title {
+    text-align: center;
+    color: #1e3a8a;
+    margin-top: 20px;
+}
+
+.css_color-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    background-color: #f9fafb;
+
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #374151;
+    }
+
+    .css_color-preview {
+        margin-top: 10px;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+}
+
+// Specific Color Previews
+.css_named .css_color-preview {
+    background-color: tomato;
+}
+
+.css_hex .css_color-preview {
+    background-color: #3498db;
+}
+
+.css_rgb .css_color-preview {
+    background-color: rgb(46, 204, 113);
+}
+
+.css_rgba .css_color-preview {
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+.css_hsl .css_color-preview {
+    background-color: hsl(120, 100%, 40%);
+}
+
+.css_hsla .css_color-preview {
+    background-color: hsla(200, 100%, 50%, 0.4);
+}
+
+// text-property
+
+.css_text-container {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background: #f8fafc;
+    color: #111827;
+    // max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0ea5e9;
+    }
+}
+
+.css_text-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #65f163;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+
+    h2 {
+        margin-bottom: 10px;
+        color: #334155;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.css_text-color {
+    color: red;
+}
+
+.css_font-size {
+    font-size: 24px;
+}
+
+.css_font-weight {
+    font-weight: bold;
+}
+
+.css_text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.css_text-align {
+    text-align: center;
+}
+
+.css_text-uppercase {
+    text-transform: uppercase;
+}
+
+.css_text-capitalize {
+    text-transform: capitalize;
+}
+
+.css_line-height {
+    line-height: 2;
+}
+
+
+// Background
+
+$box-size: 400px;
+$padding: 1rem;
+$margin: 2rem auto;
+$border-radius: 12px;
+$text-color: white;
+$text-weight: bold;
+$font-size: 1.2rem;
+
+.css_text-box {
+    width: $box-size;
+    height: $box-size;
+    padding: $padding;
+    margin: $margin;
+    border-radius: $border-radius;
+    font-weight: $text-weight;
+    font-size: $font-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    &.bg_color {
+        background-color: lightblue;
+        color: black;
+    }
+
+    &.bg_linear {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+
+    &.bg_radial {
+        background: radial-gradient(circle, #8e44ad, #3498db);
+    }
+
+    &.bg_conic {
+        background: conic-gradient(from 0deg,
+                red,
+                yellow,
+                lime,
+                cyan,
+                blue,
+                magenta,
+                red);
+    }
+
+    &.bg_image {
+        background-image: url('https://i.pinimg.com/736x/9b/4e/e0/9b4ee057076232fb57c48cf80947f8a7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+// backgroundimg
+
+$box-size: 400px;
+$section-margin: 2rem;
+
+.bg_section {
+    margin-bottom: $section-margin;
+
+    h2 {
+        margin-bottom: 0.25rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+
+        code {
+            background-color: #f2f2f2;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            color: #333;
+        }
+    }
+}
+
+.css_text-box {
+    width: $box-size;
+    height: $box-size;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #222;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+// 1. Image only
+.bg_img-basic {
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// 2. Background Color + Image
+.bg_img-color {
+    background-color: #4a90e2;
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// 3. Background Position
+.bg_img-position {
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+// 4. Background Size
+.bg_img-size {
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+// 5. Background Repeat
+.bg_img-repeat {
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-repeat: repeat;
+}
+
+// 6. Background Origin
+.bg_img-origin {
+    padding: 2rem;
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+    background-size: contain;
+}
+
+// 7. Background Clip
+.bg_img-clip {
+    padding: 2rem;
+    border: 5px dashed white;
+    background-color: #444;
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-clip: content-box;
+    color: white;
+}
+
+// 8. Background Attachment
+.bg_img-attachment {
+    background-image: url('https://i.pinimg.com/736x/8e/95/47/8e95479da2c5e493b835c8533c2d5ba5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.border_property_reference {
+
+
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .box {
+        height: 100px;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #333;
+        background-color: #f9f9f9;
+    }
+
+    // 1. border-width example
+    .border-width-example {
+        border-style: solid;
+        border-color: #000;
+        border-width: 5px;
+    }
+
+    // 2. border-style example
+    .border-style-example {
+        border-width: 3px;
+        border-style: dashed;
+        border-color: #000;
+    }
+
+    // 3. border-color example
+    .border-color-example {
+        border-width: 3px;
+        border-style: solid;
+        border-color: #ff6600;
+    }
+
+    // 4. border-radius example
+    .border-radius-example {
+        border-width: 3px;
+        border-style: solid;
+        border-color: #000;
+        border-radius: 15px;
+    }
+
+    // 5. shorthand border example
+    .border-shorthand-example {
+        border: 2px solid #333;
+    }
+}
+
+// Box-shadow
+
+.box_shadow_examples {
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .box {
+        height: 100px;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #333;
+        background-color: #f9f9f9;
+        border-radius: 6px;
+    }
+
+    // 1. Basic shadow
+    .box-shadow-basic {
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    // 2. Shadow with offset and blur
+    .box-shadow-offset-blur {
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    // 3. Shadow with spread radius
+    .box-shadow-spread {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    // 4. Shadow with color and opacity
+    .box-shadow-color {
+        box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.5);
+    }
+
+    // 5. Multiple shadows
+    .box-shadow-multiple {
+        box-shadow:
+            3px 3px 6px rgba(0, 0, 0, 0.3),
+            -3px -3px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.box_sizing_examples {
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #222;
+    }
+
+    .box {
+        width: 200px;
+        height: 100px;
+        margin-top: 0.5rem;
+        padding: 20px;
+        border: 5px solid #000;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    // 1. Default behavior
+    .box-content-box {
+        box-sizing: content-box;
+    }
+
+    // 2. Border-box behavior
+    .box-border-box {
+        box-sizing: border-box;
+    }
+}
