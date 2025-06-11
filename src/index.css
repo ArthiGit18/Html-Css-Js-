@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
 }
+
 
 
 
@@ -41,41 +45,43 @@ table {
   border-collapse: collapse;
   background: black;
   color: white;
-  box-shadow: 0 0 8px rgb(103, 255, 1);
+  box-shadow: 0 0 8px #bd34fe;
 }
 
 th,
 td {
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 20px 10px;
   text-align: left;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 th {
-  background-color: #009688;
+  background-color: #5d11ab;
   color: white;
 }
 
 tr:nth-child(even) {
-  background-color: gray;
+  background-color: #827196;
 }
 
 section {
-    background: #fff;
-    color: #333;
-    padding: 20px;
-    margin: 30px 0;
-    border-left: 5px solid #4CAF50;
-    box-shadow: 0 0 8px rgb(103, 255, 1);
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  margin: 30px 0;
+  border-left: 5px solid #5d11ab;
+  box-shadow: 0 0 8px #bd34fe;
 }
 
-ul li{
+ul li {
   list-style: square;
-  margin:  20px 40px;
+  margin: 20px 40px;
 }
 
 .highlight {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 /* css */
@@ -86,7 +92,7 @@ ul li{
   border-left: 6px solid greenyellow;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgb(103, 255, 1);
+  box-shadow: 0 0 8px #bd34fe;
   max-width: 100%;
   margin: auto;
   line-height: 30px;

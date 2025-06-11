@@ -170,7 +170,7 @@ td a {
     background: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 6px solid #65f163;
+    border-left: 5px solid #5d11ab;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
 
@@ -640,7 +640,7 @@ $section-margin: 2rem;
         width: 150px;
         height: 100px;
         margin: 1rem 0;
-        background-color: #4caf50;
+        background-color: #5d11ab;
         color: white;
         font-weight: bold;
         display: flex;
@@ -693,10 +693,11 @@ $section-margin: 2rem;
         margin: 1rem 0;
         padding: 10px;
         border: 2px solid #333;
-        background-color: #f2f2f2;
+        background-color: rgb(203, 160, 221);
         font-weight: bold;
         overflow-wrap: break-word;
         white-space: nowrap;
+        color: purple;
 
         &::after {
             content: "This is overflowing content. This is overflowing content. This is overflowing content.";

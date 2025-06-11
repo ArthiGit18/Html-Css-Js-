@@ -32,7 +32,7 @@ const BoxSizing = () => {
                     </tbody>
                 </table>
 
-                <section class="box_sizing_examples">
+                <div class="box_sizing_examples">
                     <h2>1. box-sizing: content-box (default)</h2>
                     <pre><code>
                         .box &#123;
@@ -80,7 +80,7 @@ const BoxSizing = () => {
                         &#125;
                     </code></pre>
                     <div class="box box-border-box">Border Box</div>
-                </section>
+                </div>
             </section>
 
         </div>

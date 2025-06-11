@@ -6,6 +6,7 @@ import Cards from './HomePage/Cards'
 import Count from './HomePage/Count'
 import Keys from './HomePage/Keys'
 import Contact from './HomePage/Contact'
+import Footer from './HomePage/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Count />
         <Keys />
         <Contact />
+        <Footer />
     </div>
   )
 }

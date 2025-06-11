@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import Tags from './Html Tags/Tags'
+import React, { useState } from 'react'
 import Inspiration from './Javascript Folder/Inspiration'
 import "./Javascript Folder/js.scss";
 import Concepts from './Javascript Folder/Concepts';
@@ -28,7 +27,7 @@ const sections = [
 ]
 
 const Javascript = () => {
-  const [openIndex, setOpenIndex] = useState(null)
+    const [openIndex, setOpenIndex] = useState(null)
 
     const toggleSection = (index) => {
         setOpenIndex(openIndex === index ? null : index)
@@ -36,27 +35,27 @@ const Javascript = () => {
 
     return (
         <>
-        {/* <Nav /> */}
-        <div className="html-container">
             {/* <Nav /> */}
-           <Inspiration />
+            <div className="html-container">
+                {/* <Nav /> */}
+                <Inspiration />
 
-            {sections.map((section, index) => (
-                <div key={index} className="accordion">
-                    <button
-                        className="accordion-header"
-                        onClick={() => toggleSection(index)}
-                    >
-                        {section.title}
-                    </button>
-                    {openIndex === index && (
-                        <div className="accordion-content">
-                            {section.component}
-                        </div>
-                    )}
-                </div>
-            ))}
-        </div>
+                {sections.map((section, index) => (
+                    <div key={index} className="accordion">
+                        <button
+                            className="accordion-header"
+                            onClick={() => toggleSection(index)}
+                        >
+                            {section.title}
+                        </button>
+                        {openIndex === index && (
+                            <div className="accordion-content">
+                                {section.component}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
         </>
     )
 }
