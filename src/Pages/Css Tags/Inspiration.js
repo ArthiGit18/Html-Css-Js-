@@ -2,7 +2,7 @@ import React from 'react'
 
 const Inspiration = () => {
     return (
-        <div class="inspiration">
+        <div class="inspiration_html">
             <h2>🚀 To Learn CSS, Here Are a Few Things You Must Know</h2>
             <ul>
                 <li>🎨 Understanding CSS Syntax and Selectors</li>

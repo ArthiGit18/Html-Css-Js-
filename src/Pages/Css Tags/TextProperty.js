@@ -6,18 +6,18 @@ const TextProperty = () => {
             <h1>🖋️ CSS Text Properties</h1>
 
             {/* <!-- Text Color --> */}
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>🎨 Text Color: <code>color</code></h2>
                 <p class="css_text-color">This text is red using <code>color: red;</code></p>
             </section>
 
             {/* <!-- Font Size --> */}
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>🔠 Font Size: <code>font-size</code></h2>
                 <p class="css_font-size">This text is 24px using <code>font-size: 24px;</code></p>
             </section>
 
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>⚖️ Font Weight: <code>font-weight</code></h2>
                 <p class="css_font-weight-bold">This is bold text using <code>font-weight: bold;</code></p>
                 <p class="css_font-weight-700">This is 700 weight text using <code>font-weight: 700;</code></p>
@@ -25,7 +25,7 @@ const TextProperty = () => {
             </section>
 
             {/* <!-- Text Shadow --> */}
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>🌫️ Text Shadow: <code>text-shadow</code></h2>
                 <p class="css_text-shadow">
                     This text has a shadow using: <br />
@@ -40,7 +40,7 @@ const TextProperty = () => {
             </section>
 
             {/* <!-- Text Align --> */}
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>📐 Text Align: <code>text-align</code></h2>
                 <p class="css_text-align-center">This text is centered using <code>text-align: center;</code></p>
                 <p class="css_text-align-right">This text is right-aligned using <code>text-align: right;</code></p>
@@ -50,7 +50,7 @@ const TextProperty = () => {
             </section>
 
             {/* <!-- Text Transform --> */}
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>🔠 Text Transform: <code>text-transform</code></h2>
                 <p class="css_text-uppercase">This text is UPPERCASE using <code>text-transform: uppercase;</code></p>
                 <p class="css_text-lowercase">THIS TEXT IS lowercase using <code>text-transform: lowercase;</code></p>
@@ -59,7 +59,7 @@ const TextProperty = () => {
             </section>
 
             {/* <!-- Line Height --> */}
-            <section class="css_text-box">
+            <section class="css_text-box-text">
                 <h2>📏 Line Height: <code>line-height</code></h2>
                 <p class="css_line-height">
                     This is an example of paragraph with increased line height.<br />

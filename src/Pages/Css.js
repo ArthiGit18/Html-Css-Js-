@@ -10,6 +10,11 @@ import BackgroundImg from './Css Tags/BackgroundImg'
 import Border from './Css Tags/Border'
 import BoxShadow from './Css Tags/BoxShadow'
 import BoxSizing from './Css Tags/BoxSizing'
+import Transistion from './Css Tags/Transistion'
+import Transform from './Css Tags/Transform'
+import Overflow from './Css Tags/Overflow'
+import DisplayProperty from './Css Tags/DisplayProperty'
+import PositionProperty from './Css Tags/PositionProperty'
 
 
 const sections = [
@@ -22,6 +27,11 @@ const sections = [
     { title: "Border Property", component: <Border /> },
     { title: "Box Shadow Property", component: <BoxShadow /> },
     { title: "Box Sizing Property", component: <BoxSizing /> },
+    { title: "Transition Property", component: <Transistion /> },
+    { title: "Transform Property", component: <Transform /> },
+    { title: "Overflow Property", component: <Overflow /> },
+    { title: "Display Property", component: <DisplayProperty /> },
+    { title: "Position Property", component: <PositionProperty /> },
 ]
 
 const Css = () => {

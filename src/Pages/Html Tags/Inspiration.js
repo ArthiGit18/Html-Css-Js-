@@ -2,7 +2,7 @@ import React from 'react'
 
 const Inspiration = () => {
     return (
-        <section class="inspiration">
+        <section class="inspiration_html">
             <h2>🚀 To Learn HTML, Here Are a Few Things You Must Know</h2>
             <p>HTML is the foundation of every website. Whether you're building a simple page or a complex web app, mastering these concepts will set you on the right path:</p>
             <ul>

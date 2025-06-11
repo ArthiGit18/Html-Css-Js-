@@ -6,7 +6,7 @@ const Nav = () => {
             <div className='container'>
                 <nav className='nav_items'>
                     <div className='nav_logo'>
-                        <h2><a href='/'>MyWebsite</a></h2>
+                        <a href='/'><img src="./eduTechB.png" alt="logo" /></a>
                     </div>
                     <ul className='nav_links'>
                         <li><a href='/'>Home</a></li>

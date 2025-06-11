@@ -1,11 +1,11 @@
 import React from 'react'
-import Banner from './Banner'
-import Nav from './Nav'
-import About from './About'
-import Cards from './Cards'
-import Contact from './Contact'
-import Count from './Count'
-import Keys from './Keys'
+import Nav from './HomePage/Nav'
+import Banner from './HomePage/Banner'
+import About from './HomePage/About'
+import Cards from './HomePage/Cards'
+import Count from './HomePage/Count'
+import Keys from './HomePage/Keys'
+import Contact from './HomePage/Contact'
 
 const Home = () => {
   return (

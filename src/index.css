@@ -69,6 +69,11 @@ section {
     box-shadow: 0 0 8px rgb(103, 255, 1);
 }
 
+ul li{
+  list-style: square;
+  margin:  20px 40px;
+}
+
 .highlight {
     background-color: yellow;
 }

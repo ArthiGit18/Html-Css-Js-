@@ -86,7 +86,7 @@ const FormTags = () => {
 
             <div class="form-example">
                 <h2>💡 Example: Basic Registration Form</h2>
-                <form action="/submit" method="POST">
+                <form action="/submit" method="POST" class="html_form">
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="fullname" placeholder="Enter your name" required />
 
@@ -105,9 +105,10 @@ const FormTags = () => {
 
                     <label for="bio">Your Bio:</label>
                     <textarea id="bio" name="bio" rows="4" placeholder="Write something about yourself..."></textarea>
-
-                    <input type="checkbox" id="terms" name="terms" required />
-                    <label for="terms">I agree to the terms and conditions</label>
+                    <div class="html-form-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required />
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </div>
 
                     <button type="submit">Submit</button>
                 </form>
