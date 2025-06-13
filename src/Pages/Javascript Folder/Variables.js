@@ -33,12 +33,12 @@ const Variables = () => {
                     <h2>🧪 Example:</h2>
                     <pre>
                         <code>
-// Declaring variables <br></br> <br></br>
+<p>Declaring variables </p> <br></br> <br></br>
                             let name = "Arthi";<br></br>
                             const age = 25;<br></br>
                             var isStudent = true; <br></br> <br></br> <br></br>
 
-                            // Output to console <br></br> <br></br>
+                            <p>Output to console</p> <br></br> <br></br>
                             console.log(name);       // Arthi<br></br>
                             console.log(age);        // 25<br></br>
                             console.log(isStudent);  // true<br></br>

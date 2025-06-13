@@ -19,7 +19,7 @@ const HtmlElements = () => {
                 <h2>📌 Examples</h2>
 
                 <h3>🔹 Inline Elements</h3>
-                <p>This is <span class="highlight">inline</span> text with <a href="#">anchor</a> and <em>emphasis</em>.</p>
+                <p>This is <span class="highlight">inline</span> text with <a href="/">anchor</a> and <em>emphasis</em>.</p>
 
                 <h3>🔹 Block Elements</h3>
                 <div class="block-example">I am a div (block element)</div>
