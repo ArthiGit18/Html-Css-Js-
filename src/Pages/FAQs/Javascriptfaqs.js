@@ -36,6 +36,44 @@ const Javascriptfaqs = () => {
                 </ul>
             </div>
 
+            <div class="faq-item">
+                <h2> What is a variable in JavaScript?</h2>
+                <p>
+                    A <strong>variable</strong> is a named container used to store data that can be referenced and manipulated later in a program.
+                    Variables allow you to reuse and manage data dynamically.
+                </p>
+
+                <h3>🔹 How to Declare Variables:</h3>
+                <ul>
+                    <li><code>var</code> – Function scoped, can be re-declared and updated</li>
+                    <li><code>let</code> – Block scoped, can be updated but not re-declared in the same scope</li>
+                    <li><code>const</code> – Block scoped, cannot be re-assigned after initialization</li>
+                </ul>
+
+                <p><strong>Examples:</strong></p>
+                <pre><code>
+                    var name = "Arthi";        &#47;&#47; using var
+                    let age = 25;              &#47;&#47; using let
+                    const country = "India";   &#47;&#47; using const
+                </code></pre>
+
+                <h3>🔹 Types of Data Stored in Variables:</h3>
+                <ul>
+                    <li><strong>String</strong> – Text data (<code>"Hello"</code>, <code>'World'</code>)</li>
+                    <li><strong>Number</strong> – Numeric data (<code>42</code>, <code>3.14</code>)</li>
+                    <li><strong>Boolean</strong> – True or false (<code>true</code>, <code>false</code>)</li>
+                    <li><strong>Array</strong> – Collection of values (<code>[1, 2, 3]</code>)</li>
+                    <li><strong>Object</strong> – Key-value pairs (<code>&#123; name: "Arthi" &#125;</code>)</li>
+                    <li><strong>Null</strong> – Empty or no value</li>
+                    <li><strong>Undefined</strong> – Declared but not assigned</li>
+                    <li><strong>Symbol</strong> – Unique identifiers</li>
+                    <li><strong>BigInt</strong> – Large integers</li>
+                </ul>
+
+                <p><strong>Note:</strong> JavaScript is <em>dynamically typed</em>, so the type of data a variable holds can change during runtime (except for <code>const</code>).</p>
+            </div>
+
+
             <div className="faq-item">
                 <h2>3. What is the difference between var, let, and const?</h2>
                 <p><strong>var:</strong> Function scoped, hoisted, can be redeclared and updated.</p><br />
