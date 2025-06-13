@@ -48,7 +48,6 @@ const BoxSizing = () => {
                         font-weight: 600;
                         &#125;
 
-                        /* 1. Default behavior */
                         .box-content-box &#123;
                         box-sizing: content-box;
                         &#125;
@@ -74,7 +73,6 @@ const BoxSizing = () => {
 
 
 
-                        /* 2. Border-box behavior */
                         .box-border-box &#123;
                         box-sizing: border-box;
                         &#125;

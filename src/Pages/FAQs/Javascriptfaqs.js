@@ -11,19 +11,19 @@ const Javascriptfaqs = () => {
                 <p>JavaScript is a high-level, interpreted programming language used to make dynamic and interactive web pages. It can be used for client-side and server-side development.</p>
                 <h3>Characteristics :</h3>
                 <ul>
-                    <li style={{listStyleType: "square", fontWeight: "700"}}> Interpreted Language</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -code is executed line by line by browser's JS Engine</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -no need compilation before running code</li>
-                    <li style={{listStyleType: "square", fontWeight: "700"}}> Dynamically Typed</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -no need to declare variable type explicitly, it determined at runtime</li>
-                    <li style={{listStyleType: "square", fontWeight: "700"}}> Multi Paradigm</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -supports object oriented, functional and procedural programming</li>
-                    <li style={{listStyleType: "square", fontWeight: "700"}}> Asynchronous</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -supports asynchronous programming with callbacks, promises , async / await</li>
-                    <li style={{listStyleType: "square", fontWeight: "700"}}> Weakly / Loosely Typed</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -can perform operations between different types string + number leads to implicit type coercion</li>
-                    <li style={{listStyleType: "square", fontWeight: "700"}}> Platform Independent</li>
-                    <li style={{listStyleType: "none",textIndent: "2em"}}> -runs on any browser</li>
+                    <li style={{ listStyleType: "square", fontWeight: "700" }}> Interpreted Language</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -code is executed line by line by browser's JS Engine</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -no need compilation before running code</li>
+                    <li style={{ listStyleType: "square", fontWeight: "700" }}> Dynamically Typed</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -no need to declare variable type explicitly, it determined at runtime</li>
+                    <li style={{ listStyleType: "square", fontWeight: "700" }}> Multi Paradigm</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -supports object oriented, functional and procedural programming</li>
+                    <li style={{ listStyleType: "square", fontWeight: "700" }}> Asynchronous</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -supports asynchronous programming with callbacks, promises , async / await</li>
+                    <li style={{ listStyleType: "square", fontWeight: "700" }}> Weakly / Loosely Typed</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -can perform operations between different types string + number leads to implicit type coercion</li>
+                    <li style={{ listStyleType: "square", fontWeight: "700" }}> Platform Independent</li>
+                    <li style={{ listStyleType: "none", textIndent: "2em" }}> -runs on any browser</li>
                 </ul>
             </div>
 
@@ -388,7 +388,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>16. What is a promise in JavaScript?</h2>
+                <h2>16. What is a Promise in JavaScript?</h2>
                 <p>
                     A <strong>Promise</strong> is an object in JavaScript that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
                 </p>
@@ -396,26 +396,38 @@ const Javascriptfaqs = () => {
                 <p><strong>States of a Promise:</strong></p>
                 <ul>
                     <li><strong>Pending</strong> – Initial state, neither fulfilled nor rejected</li>
-                    <li><strong>Fulfilled</strong> – Operation completed successfully</li>
-                    <li><strong>Rejected</strong> – Operation failed</li>
+                    <li><strong>Fulfilled</strong> – Operation completed successfully (calls <code>resolve()</code>)</li>
+                    <li><strong>Rejected</strong> – Operation failed (calls <code>reject()</code>)</li>
                 </ul>
 
                 <p><strong>Creating a Promise:</strong></p>
                 <code>
                     const promise = new Promise((resolve, reject) =&gt; &#123;<br />
-                    &nbsp;&nbsp;// async task<br />
-                    &nbsp;&nbsp;resolve("Success");<br />
+                    &nbsp;&nbsp;const success = true;<br />
+                    &nbsp;&nbsp;if (success) &#123;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;resolve("Operation Successful");<br />
+                    &nbsp;&nbsp;&#125; else &#123;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;reject("Operation Failed");<br />
+                    &nbsp;&nbsp;&#125;<br />
                     &#125;);
                 </code>
 
                 <p><strong>Handling a Promise:</strong></p>
                 <code>
                     promise<br />
-                    &nbsp;&nbsp;.then(result =&gt; console.log(result))<br />
-                    &nbsp;&nbsp;.catch(error =&gt; console.log(error));
+                    &nbsp;&nbsp;.then(result =&gt; console.log("Resolved:", result))<br />
+                    &nbsp;&nbsp;.catch(error =&gt; console.error("Rejected:", error))<br />
+                    &nbsp;&nbsp;.finally(() =&gt; console.log("Promise complete"));
                 </code>
 
-                <p><strong>Use Case:</strong> Promises are used for tasks like API calls, file reading, and timers.</p>
+                <p><strong>Key Methods:</strong></p>
+                <ul>
+                    <li><code>.then()</code> – Runs when the promise is resolved</li>
+                    <li><code>.catch()</code> – Runs when the promise is rejected</li>
+                    <li><code>.finally()</code> – Runs after either <code>then</code> or <code>catch</code> completes</li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Handling API requests, asynchronous file reads, timers, etc.</p>
             </div>
 
             <div class="faq-item">
