@@ -639,6 +639,62 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
+                <h2>24. What is the difference between the Spread and Rest operators in JavaScript?</h2>
+
+                <p>
+                    Both the <code>...</code> spread and rest operators use the same syntax but serve different purposes depending on the context.
+                </p>
+
+                <h3>🔹 Spread Operator (<code>...</code>)</h3>
+                <p>Used to <strong>expand</strong> or <strong>unpack</strong> elements from arrays, objects, or strings.</p>
+
+                <p><strong>Example 1:</strong> Array spreading</p>
+                <pre><code>
+                    const arr1 = [1, 2, 3];
+                    const arr2 = [...arr1, 4, 5]; &#47;&#47; [1, 2, 3, 4, 5]
+                </code></pre>
+
+                <p><strong>Example 2:</strong> Object spreading</p>
+                <pre><code>
+                    const obj1 = &#123; a: 1, b: 2 &#125;;
+                    const obj2 = &#123; ...obj1, c: 3 &#125;; &#47;&#47; &#123; a: 1, b: 2, c: 3 &#125;
+                </code></pre>
+
+                <p><strong>Example 3:</strong> Function arguments</p>
+                <pre><code>
+                    function sum(a, b, c) &#123; return a + b + c; &#125;
+                    console.log(sum(...[1, 2, 3])); &#47;&#47; 6
+                </code></pre>
+
+                <h3>🔹 Rest Operator (<code>...</code>)</h3>
+                <p>Used to <strong>gather</strong> remaining arguments or items into an array.</p>
+
+                <p><strong>Example 1:</strong> Function parameters</p>
+                <pre><code>
+                    function greet(message, ...names) &#123;
+                    console.log(message, names);
+                    &#125;
+                    greet("Hello", "Alice", "Bob"); &#47;&#47; "Hello" [ "Alice", "Bob" ]
+                </code></pre>
+
+                <p><strong>Example 2:</strong> Array destructuring</p>
+                <pre><code>
+                    const [first, ...rest] = [10, 20, 30];
+                    console.log(first); &#47;&#47; 10
+                    console.log(rest);  &#47;&#47; [20, 30]
+                </code></pre>
+
+                <h3>🆚 Key Differences:</h3>
+                <ul>
+                    <li><strong>Spread:</strong> Expands values</li>
+                    <li><strong>Rest:</strong> Collects values</li>
+                    <li><strong>Spread:</strong> Used in arrays, objects, and function calls</li>
+                    <li><strong>Rest:</strong> Used in function parameters and destructuring</li>
+                    <li><strong>Rest:</strong> Must be the last parameter in a function</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
                 <h2>25. What is the <code>fetch</code> method in JavaScript?</h2>
                 <p>
                     The <strong><code>fetch()</code></strong> method is used to make HTTP requests in JavaScript. It returns a Promise that resolves to the response of the request.
