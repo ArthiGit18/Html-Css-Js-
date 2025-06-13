@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="edu-footer">
             <div className="footer-content">
                 <div className="footer-brand">
-                    <img src="./eduTechB.png" at="logo" />
+                    <img src="./eduTechB.png" alt="Logo-image" />
                     <h2>Edu<span>Tech</span></h2>
                     <p>Empowering learners with technology-driven education.</p>
                 </div>

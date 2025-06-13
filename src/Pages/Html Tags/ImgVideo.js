@@ -34,7 +34,7 @@ const ImgVideo = () => {
                         </tr>
                     </tbody>
                 </table>
-                <img src="https://via.placeholder.com/300" alt="Example image" width="300" />
+                {/* <img src="" alt="Example image" width="300" /> */}
             </section>
 
             <section>
@@ -144,9 +144,9 @@ const ImgVideo = () => {
                         </tr>
                     </tbody>
                 </table>
-                <marquee behavior="alternate" direction="right" scrollamount="6" style={{ color: "blue", fontWeight: "bold" }}>
+                {/* <marquee behavior="alternate" direction="right" scrollamount="6" style={{ color: "blue", fontWeight: "bold" }}>
                     🔔 Welcome to Our Learning Website!
-                </marquee>
+                </marquee> */}
 
             </section>
 

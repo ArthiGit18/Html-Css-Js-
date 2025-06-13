@@ -17,7 +17,7 @@ const Keys = () => {
                         </ul>
                     </div>
                     <div className='keys_image'>
-                        <img src="./assets/keys/1.png" alt="image" />
+                        <img src="./assets/keys/1.png" alt="image-learning" />
                     </div>
                 </div>
             </div>
