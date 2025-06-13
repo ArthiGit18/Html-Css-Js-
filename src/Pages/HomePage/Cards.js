@@ -35,6 +35,17 @@ const Cards = () => {
                             JavaScript is a programming language that adds interactivity to websites, such as form validations, button clicks, animations, and dynamic content.
                         </p>
                     </div>
+                    <div className='card'>
+                        <a href="/important-Faqs">
+                            <div className='card_img'>
+                                <img src='./assets/cards/1.png' alt='Service Icon' />
+                            </div>
+                        </a>
+                        <h2>FAQs</h2>
+                        <p>
+                            Important FAQs for HTML, CSS, JAVASCRIPT
+                        </p>
+                    </div>
                 </div>
             </div>
 

@@ -26,6 +26,8 @@ header h1 {
 
 h2 {
   margin: 20px 0;
+  text-shadow: 2px 4px 4px rgb(230, 141, 248);
+
 }
 
 p {

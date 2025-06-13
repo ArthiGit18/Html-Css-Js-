@@ -4,6 +4,7 @@ import Html from './Pages/Html';
 import Css from './Pages/Css';
 import Javascript from './Pages/Javascript';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import FAQs from './Pages/FAQs';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/html-tags" element={<Html />} />
         <Route path="/css-tags" element={<Css />} />
         <Route path="/javascript-elements-functions" element={<Javascript />} />
+        <Route path="/important-Faqs" element={<FAQs />} />
       </Routes>
     </Router>
   );
