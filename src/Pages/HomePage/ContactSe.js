@@ -3,6 +3,31 @@ import Nav from './Nav'
 import Footer from './Footer'
 
 const ContactSe = () => {
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formData = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+        };
+
+        try {
+            const res = await fetch('http://localhost:5000/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await res.json();
+            alert(data.message || 'Message sent successfully!');
+        } catch (err) {
+            alert('Failed to send message. Please try again.');
+        }
+    };
+
+
     return (
         <>
             <Nav />
@@ -17,7 +42,7 @@ const ContactSe = () => {
                 </iframe> */}
                 <div className='container' style={{ marginTop: "40px" }}>
                     <h2>Contact Us</h2>
-                    <form className='contact_form'>
+                    <form className='contact_form' onSubmit={handleSubmit}>
                         <label htmlFor='name'>Name:</label>
                         <input type='text' id='name' name='name' required />
 
