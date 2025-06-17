@@ -9,7 +9,8 @@ const AboutUs = () => {
             <div className='AboutUs_wrapper'>
                 <div className='About_myself'>
                     <div className='aboutus_img'>
-                        <img src="./assets/aboutUs/1.png" alt="My-image-as- anime" />
+                        {/* <img src="./assets/aboutUs/1.png" alt="My-image-as- anime" /> */}
+                        <img src="./assets/aboutUs/5.png" alt="My-image-as- anime" />
                     </div>
                     <div className='abutous_my_content'>
                         <h2>About Myself</h2>
@@ -33,7 +34,7 @@ const AboutUs = () => {
                     <div className='card1'>
                         <img src="./assets/aboutUs/3.png" alt="partner1" />
                         <div className='partner_content'>
-                            <h2>Jackson</h2>
+                            <h2>Miller</h2>
                             <p>Ea deserunt cupidatat elit deserunt nulla est in magna sunt sit laboris laboris tempor.</p>
                         </div>
                     </div>

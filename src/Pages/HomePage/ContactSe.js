@@ -7,7 +7,15 @@ const ContactSe = () => {
         <>
             <Nav />
             <div className='contact_wrapper'>
-                <div className='container' style={{marginTop: "50px"}}>
+                {/* <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.916911160184!2d80.25535207505804!3d13.072707787248244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52660f7b9636c7%3A0x3bcd543e4780ef96!2sEgmore%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1718629987451!5m2!1sen!2sin"
+                    style={{ width: "100%", height: "300px", border: "0", marginTop: "100px" }}
+                    // style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe> */}
+                <div className='container' style={{ marginTop: "40px" }}>
                     <h2>Contact Us</h2>
                     <form className='contact_form'>
                         <label htmlFor='name'>Name:</label>
