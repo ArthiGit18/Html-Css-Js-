@@ -268,6 +268,98 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
+                <h2>What is an Event Listener in JavaScript?</h2>
+
+                <p>
+                    An <strong>event listener</strong> is a method used to wait for user interaction (like clicks, input, hover, etc.) on a webpage element and then execute a callback function.
+                </p>
+
+                <h3>🔹 Syntax:</h3>
+                <pre><code>
+                    element.addEventListener("event", callbackFunction);
+                </code></pre>
+
+                <p>&#47;&#47; Example:</p>
+                <pre><code>
+                    document.getElementById("btn").addEventListener("click", function() &#123;
+                    alert("Button Clicked!");
+                    &#125;);
+                </code></pre>
+
+                <h3>🔹 Common Event Types:</h3>
+                <ul>
+                    <li><strong>Mouse Events:</strong> <code>click</code>, <code>dblclick</code>, <code>mouseover</code>, <code>mouseout</code>, <code>contextmenu</code></li>
+                    <li><strong>Keyboard Events:</strong> <code>keydown</code>, <code>keyup</code>, <code>keypress</code></li>
+                    <li><strong>Form Events:</strong> <code>submit</code>, <code>change</code>, <code>focus</code>, <code>blur</code></li>
+                    <li><strong>Window Events:</strong> <code>load</code>, <code>resize</code>, <code>scroll</code>, <code>unload</code></li>
+                </ul>
+
+                <h3>🔹 Event Listener Properties:</h3>
+                <ul>
+                    <li><code>type</code> – The type of event (e.g., "click")</li>
+                    <li><code>target</code> – The element that triggered the event</li>
+                    <li><code>currentTarget</code> – The element the event listener is attached to</li>
+                    <li><code>eventPhase</code> – Describes the phase of the event flow (capturing, target, bubbling)</li>
+                    <li><code>defaultPrevented</code> – Returns <code>true</code> if <code>preventDefault()</code> was called</li>
+                </ul>
+
+                <h3>✅ Example Button:</h3>
+                <button id="btn">Click Me</button>
+            </div>
+
+            <div class="faq-item">
+                <h2>Event Handler vs Event Listener in JavaScript</h2>
+
+                <h3>🔸 Event Handler</h3>
+                <p>
+                    An <strong>event handler</strong> is a property that is assigned directly to an HTML element or DOM element using an attribute or JavaScript property.
+                </p>
+
+                <p><strong>Example:</strong></p>
+                <pre><code>
+                    &lt;button onclick="showAlert()"&gt;Click Me&lt;/button&gt;
+
+                    &#47;&#47; JavaScript
+                    function showAlert() &#123;
+                    alert("Hello from handler");
+                    &#125;
+                </code></pre>
+
+                <h3>🔸 Event Listener</h3>
+                <p>
+                    An <strong>event listener</strong> is added using JavaScript with <code>addEventListener()</code> and allows attaching multiple listeners to the same event.
+                </p>
+
+                <p><strong>Example:</strong></p>
+                <pre><code>
+                    const btn = document.getElementById("btn");
+                    btn.addEventListener("click", function() &#123;
+                    alert("Hello from listener");
+                    &#125;);
+                </code></pre>
+
+                <h3>🧠 Key Differences:</h3>
+                <ul>
+                    <li><strong>Event Handlers</strong> overwrite previous handlers.</li>
+                    <li><strong>Event Listeners</strong> allow multiple listeners on the same element.</li>
+                    <li><code>addEventListener</code> gives more control (e.g., capturing, removing).</li>
+                </ul>
+
+                <h3>📚 Common Event Types:</h3>
+                <ul>
+                    <li><strong>Mouse:</strong> <code>click</code>, <code>dblclick</code>, <code>mouseover</code>, <code>mouseout</code></li>
+                    <li><strong>Keyboard:</strong> <code>keydown</code>, <code>keyup</code></li>
+                    <li><strong>Form:</strong> <code>submit</code>, <code>change</code>, <code>focus</code>, <code>blur</code></li>
+                    <li><strong>Window:</strong> <code>load</code>, <code>resize</code>, <code>scroll</code></li>
+                </ul>
+
+                <h3>🎯 Try Me Button:</h3>
+                <button id="btn">Click (Listener)</button>
+            </div>
+
+
+
+            <div class="faq-item">
                 <h2>10. What is the difference between <code>==</code> and <code>===</code>?</h2>
                 <p>
                     In JavaScript, both <code>==</code> and <code>===</code> are comparison operators, but they behave differently.
@@ -780,6 +872,99 @@ const Javascriptfaqs = () => {
                 </code>
 
                 <p><strong>All other values are truthy</strong> (like non-zero numbers, non-empty strings, objects, arrays, etc.).</p>
+            </div>
+
+            <div class="faq-item">
+                <h2> What is a Higher-Order Function in JavaScript?</h2>
+
+                <p>
+                    A <strong>Higher-Order Function (HOF)</strong> is a function that either:
+                </p>
+                <ul>
+                    <li>Takes one or more functions as arguments (callback functions)</li>
+                    <li>Returns a function as its result</li>
+                </ul>
+
+                <p>
+                    Higher-order functions make code more modular, reusable, and expressive.
+                    Common examples include <code>map()</code>, <code>filter()</code>, <code>reduce()</code>, and <code>forEach()</code>.
+                </p>
+
+                <h3>🔹 Example 1: Passing a Function as an Argument</h3>
+                <pre><code>
+                    function greet(name) &#123;
+                    return "Hello " + name;
+                    &#125;
+
+                    function processUser(callback) &#123;
+                    const result = callback("Arthi");
+                    console.log(result); &#47;&#47; Hello Arthi
+                    &#125;
+
+                    processUser(greet);
+                </code></pre>
+
+                <h3>🔹 Example 2: Returning a Function</h3>
+                <pre><code>
+                    function multiplier(factor) &#123;
+                    return function(num) &#123;
+                    return num * factor;
+                    &#125;;
+                    &#125;
+
+                    const double = multiplier(2);
+                    console.log(double(5)); &#47;&#47; 10
+                </code></pre>
+
+                <h3>🔹 Built-in Higher-Order Functions</h3>
+                <ul>
+                    <li><code>map()</code> – Transforms each item in an array</li>
+                    <li><code>filter()</code> – Filters array elements based on a condition</li>
+                    <li><code>reduce()</code> – Reduces array to a single value</li>
+                    <li><code>forEach()</code> – Executes a function for each array element</li>
+                </ul>
+
+                <h3>✅ Benefits:</h3>
+                <ul>
+                    <li>Improves code reusability and readability</li>
+                    <li>Encourages functional programming patterns</li>
+                    <li>Helps write cleaner logic without manual loops</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h2>What is Lexical Scoping in JavaScript?</h2>
+
+                <p>
+                    <strong>Lexical Scoping</strong> means that a function's scope is determined by its physical location in the source code (i.e., where it's written).
+                    Inner functions have access to variables defined in their outer functions.
+                </p>
+
+                <h3>🔹 Example:</h3>
+                <pre><code>
+                    function outer() &#123;
+                    let name = "Arthi";
+
+                    function inner() &#123;
+                    console.log(name); &#47;&#47; "Arthi"
+                    &#125;
+
+                    inner();
+                    &#125;
+
+                    outer();
+                </code></pre>
+
+                <p>
+                    <strong>Explanation:</strong> In this example, the <code>inner()</code> function can access the <code>name</code> variable defined in <code>outer()</code> because of lexical scope.
+                </p>
+
+                <h3>🧠 Key Point:</h3>
+                <ul>
+                    <li>Scope is defined by where the function is written — not where it's called.</li>
+                    <li>Functions are bundled with the scope they were created in.</li>
+                    <li>This is the basis for <strong>closures</strong> in JavaScript.</li>
+                </ul>
             </div>
 
 
