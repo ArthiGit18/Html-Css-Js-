@@ -6,6 +6,8 @@ import Javascript from './Pages/Javascript';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import FAQs from './Pages/FAQs';
 import Service from './Pages/HomePage/Service';
+import AboutUs from './Pages/HomePage/AboutUs';
+import ContactSe from './Pages/HomePage/ContactSe';
 
 
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/javascript-elements-functions" element={<Javascript />} />
         <Route path="/important-Faqs" element={<FAQs />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/about-us-our-team" element={<AboutUs />} />
+        <Route path="/contact-us-our-team" element={<ContactSe />} />
       </Routes>
     </Router>
   );

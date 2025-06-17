@@ -257,6 +257,96 @@
 
 }
 
+.AboutUs_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px 20px;
+    color: white;
+
+    margin-top: 50px;
+
+    h2 {
+        color: white;
+        font-size: 30px;
+    }
+
+    .About_myself {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 50px auto;
+        border: 3px solid white;
+        box-shadow: #f4f2f5 10px 10px 10px -10px;
+        border-radius: 20px;
+        background-color: black;
+        // background: #abadb0;
+        background: linear-gradient(178deg, rgba(171, 173, 176, 0.02) 0%, rgba(236, 232, 250, 0.05) 65%, rgba(189, 52, 254, 1) 100%);
+
+        .aboutus_img img {
+            border-radius: 20px 0 0 20px;
+            box-shadow: #9001d3 10px 10px 10px -5px;
+        }
+
+        .abutous_my_content p {
+            font-size: 20px;
+            padding: 40px;
+            color: #a879e6;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+    }
+
+    .aboutus_content {
+        max-width: 1440px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+        column-gap: 20px;
+
+
+        .card1 {
+            //  margin: 50px auto;
+            border: 3px solid white;
+            box-shadow: #f4f2f5 10px 10px 10px -10px;
+            border-radius: 20px;
+            background-color: black;
+            // background: #abadb0;
+            background: linear-gradient(178deg, rgba(171, 173, 176, 0.02) 0%, rgba(236, 232, 250, 0.05) 65%, rgba(189, 52, 254, 1) 100%);
+            border-radius: 20px;
+            background-color: black;
+            color: #a879e6;
+            font-size: 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+
+            img {
+                height: 300px;
+                border-radius: 20px 0 0 20px;
+                box-shadow: #9001d3 10px 10px 10px -5px;
+
+            }
+
+            .partner_content h2 {
+                color: white;
+            }
+        }
+    }
+}
+
 .service_wrapper {
     display: flex;
     flex-wrap: wrap;

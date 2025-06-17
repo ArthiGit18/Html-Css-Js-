@@ -107,9 +107,9 @@ const Nav = () => {
                     </div>
                     <ul className='nav_links'>
                         <li><a href='/'>Home</a></li>
-                        <li><a href='/about'>About</a></li>
+                        <li><a href='/about-us-our-team'>About</a></li>
                         <li><a href='/service'>Services</a></li>
-                        <li><a href='/contact'>Contact</a></li>
+                        <li><a href='/contact-us-our-team'>Contact</a></li>
                     </ul>
 
                     <div className='nav_buttons'>
