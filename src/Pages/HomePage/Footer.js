@@ -34,7 +34,7 @@ const Footer = () => {
                     <h3>Contact</h3>
                     <p>📧 info@edutech.com</p>
                     <p>📍 Chennai, Tamil Nadu</p>
-                    <p>📞 +91 98765 43210</p>
+                    <p>📞 +91 6379424101</p>
                 </div>
 
                 <div className="footer-social">

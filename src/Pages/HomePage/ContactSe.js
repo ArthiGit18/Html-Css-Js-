@@ -14,7 +14,7 @@ const ContactSe = () => {
         };
 
         try {
-            const res = await fetch('http://localhost:5000/api/contact', {
+            const res = await fetch('https://edutech-backend-znpm.onrender.com/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
@@ -40,7 +40,7 @@ const ContactSe = () => {
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe> */}
-                <div className='container' style={{ marginTop: "40px" }}>
+                <div className='container' style={{ marginTop: "70px" }}>
                     <h2>Contact Us</h2>
                     <form className='contact_form' onSubmit={handleSubmit}>
                         <label htmlFor='name'>Name:</label>

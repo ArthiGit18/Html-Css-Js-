@@ -53,7 +53,7 @@ const Nav = () => {
     const handleLoginSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', loginData);
+            const res = await axios.post('https://edutech-backend-znpm.onrender.com/api/auth/login', loginData);
             const token = res.data.token;
             const payload = JSON.parse(atob(token.split('.')[1]));
             const userData = { username: payload.username };
@@ -72,7 +72,7 @@ const Nav = () => {
     const handleSignupSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/signup', signupData);
+            const res = await axios.post('https://edutech-backend-znpm.onrender.com/api/auth/signup', signupData);
             const token = res.data.token;
             const userData = res.data.user;
 
