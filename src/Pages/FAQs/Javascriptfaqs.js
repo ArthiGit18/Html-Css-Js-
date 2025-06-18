@@ -37,7 +37,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2> What is a variable in JavaScript?</h2>
+                <h2>3. What is a variable in JavaScript?</h2>
                 <p>
                     A <strong>variable</strong> is a named container used to store data that can be referenced and manipulated later in a program.
                     Variables allow you to reuse and manage data dynamically.
@@ -75,14 +75,14 @@ const Javascriptfaqs = () => {
 
 
             <div className="faq-item">
-                <h2>3. What is the difference between var, let, and const?</h2>
+                <h2>4. What is the difference between var, let, and const?</h2>
                 <p><strong>var:</strong> Function scoped, hoisted, can be redeclared and updated.</p><br />
                 <p><strong>let:</strong> Block scoped, cannot be redeclared in the same scope, but can be updated.</p><br />
                 <p><strong>const:</strong> Block scoped, cannot be redeclared or updated (for primitives).</p><br />
             </div>
 
             <div className="faq-item">
-                <h2>4. What are template literals in JavaScript?</h2>
+                <h2>5. What are template literals in JavaScript?</h2>
                 <p>Template literals are enclosed by backticks (<code>&#96;</code>) and allow embedded expressions using <code>&#123;expression&#125;</code>. They are useful for string interpolation and multi-line strings.</p>
                 <p><strong>Advantages of Template Literals:</strong></p>
                 <ul>
@@ -95,7 +95,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div className="faq-item">
-                <h2>5. What are functions in JavaScript? (All types)</h2>
+                <h2>6. What are functions in JavaScript? (All types)</h2>
                 <p>Functions are blocks of code designed to perform a task. Types include:</p>
 
 
@@ -154,7 +154,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>6. What is the DOM in JavaScript?</h2>
+                <h2>7. What is the DOM in JavaScript?</h2>
                 <p>
                     DOM stands for <strong>Document Object Model</strong>. It is a browser-provided programming interface that represents the structure of an HTML or XML document as a tree of objects (nodes). Each element, attribute, and piece of text becomes a node in this tree.
                 </p>
@@ -193,8 +193,9 @@ const Javascriptfaqs = () => {
                     <li><code>element.remove()</code></li>
                 </ul>
             </div>
+
             <div class="faq-item">
-                <h2>7. How do you select an element using JavaScript?</h2>
+                <h2>8. How do you select an element using JavaScript?</h2>
                 <p>
                     In JavaScript, you can select elements from the DOM (Document Object Model) using various DOM selector methods. These methods allow you to access and manipulate HTML elements dynamically.
                 </p>
@@ -222,7 +223,7 @@ const Javascriptfaqs = () => {
                 <code>const heading = document.getElementById("main-heading");</code>
             </div>
             <div class="faq-item">
-                <h2>8. How do you change the content of an element in JavaScript?</h2>
+                <h2>9. How do you change the content of an element in JavaScript?</h2>
                 <p>
                     You can change the content of an HTML element in JavaScript using properties like:
                     <code>innerHTML</code>, <code>textContent</code>, and <code>innerText</code>.
@@ -248,7 +249,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>9. What is an event in JavaScript? (Event Handler, Event Listener)</h2>
+                <h2>10. What is an event in JavaScript? (Event Handler, Event Listener)</h2>
                 <p>
                     An <strong>event</strong> in JavaScript is an action or occurrence that happens in the browser, like a user clicking a button, hovering over an element, submitting a form, or pressing a key.
                 </p>
@@ -268,7 +269,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>What is an Event Listener in JavaScript?</h2>
+                <h2>11.What is an Event Listener in JavaScript?</h2>
 
                 <p>
                     An <strong>event listener</strong> is a method used to wait for user interaction (like clicks, input, hover, etc.) on a webpage element and then execute a callback function.
@@ -308,7 +309,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>Event Handler vs Event Listener in JavaScript</h2>
+                <h2>12.Event Handler vs Event Listener in JavaScript</h2>
 
                 <h3>🔸 Event Handler</h3>
                 <p>
@@ -360,7 +361,7 @@ const Javascriptfaqs = () => {
 
 
             <div class="faq-item">
-                <h2>10. What is the difference between <code>==</code> and <code>===</code>?</h2>
+                <h2>13. What is the difference between <code>==</code> and <code>===</code>?</h2>
                 <p>
                     In JavaScript, both <code>==</code> and <code>===</code> are comparison operators, but they behave differently.
                 </p>
@@ -382,7 +383,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>11. What is the difference between <code>null</code> and <code>undefined</code>?</h2>
+                <h2>14. What is the difference between <code>null</code> and <code>undefined</code>?</h2>
                 <p>
                     In JavaScript, both <code>null</code> and <code>undefined</code> represent absence of a value, but they are used in different contexts.
                 </p>
@@ -410,7 +411,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>12. What is an array in JavaScript? What are its methods?</h2>
+                <h2>15. What is an array in JavaScript? What are its methods?</h2>
                 <p>
                     An <strong>array</strong> in JavaScript is a special variable used to store multiple values in a single variable. Arrays are ordered and indexed starting from 0.
                 </p>
@@ -438,7 +439,44 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>13. What are objects in JavaScript and its methods?</h2>
+                <h2>16.What is a String in JavaScript?</h2>
+                <p>
+                    A <strong>String</strong> is a sequence of characters used to represent text in JavaScript. It is one of the primitive data types and is enclosed in quotes.
+                </p>
+
+                <p><strong>Example:</strong></p>
+                <pre><code>
+                    let name = "Arthi";
+                    let greeting = 'Hello';
+                    {/* let phrase = `Welcome, ${name}`; */}
+                </code></pre>
+
+                <h3>Types of String Declaration:</h3>
+                <ul>
+                    <li><code>Double quotes</code> – <code>"Hello World"</code></li>
+                    <li><code>Single quotes</code> – <code>'Hello World'</code></li>
+                    <li><code>Backticks (Template literals)</code> </li>
+                </ul>
+
+                <h3>Common String Methods:</h3>
+                <ul>
+                    <li><code>length</code> – Returns string length</li>
+                    <li><code>toUpperCase()</code> – Converts to uppercase</li>
+                    <li><code>toLowerCase()</code> – Converts to lowercase</li>
+                    <li><code>includes()</code> – Checks if a substring exists</li>
+                    <li><code>slice()</code> – Extracts part of a string</li>
+                    <li><code>replace()</code> – Replaces part of a string</li>
+                </ul>
+
+                <p>&#47;&#47; Example using template literals</p>
+                <pre><code>
+                    let name = "Arthi";
+                    let greet = `Hi, &#36;&#123;name&#125;!`; // Output: Hi, Arthi!
+                </code></pre>
+            </div>
+
+            <div class="faq-item">
+                <h2>17. What are objects in JavaScript and its methods?</h2>
                 <p>
                     An <strong>object</strong> in JavaScript is a collection of key-value pairs where each key (also called a property) maps to a value. Objects can also contain functions, called methods.
                 </p>
@@ -467,7 +505,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>14. What is the difference between <code>slice()</code> and <code>splice()</code>?</h2>
+                <h2>18. What is the difference between <code>slice()</code> and <code>splice()</code>?</h2>
                 <p>
                     Both <code>slice()</code> and <code>splice()</code> are array methods used to extract or modify elements, but they work differently:
                 </p>
@@ -494,7 +532,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>15. What are the ES6 features in JavaScript?</h2>
+                <h2>19. What are the ES6 features in JavaScript?</h2>
                 <p>
                     ES6 (ECMAScript 2015) introduced several new features to make JavaScript more powerful and developer-friendly.
                 </p>
@@ -518,7 +556,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>16. What is a Promise in JavaScript?</h2>
+                <h2>20. What is a Promise in JavaScript?</h2>
                 <p>
                     A <strong>Promise</strong> is an object in JavaScript that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
                 </p>
@@ -561,7 +599,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>17. What is <code>async/await</code> in JavaScript?</h2>
+                <h2>21. What is <code>async/await</code> in JavaScript?</h2>
                 <p>
                     <code>async</code> and <code>await</code> are ES8 features used to simplify working with Promises and asynchronous code.
                 </p>
@@ -591,7 +629,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>18. What is hoisting in JavaScript?</h2>
+                <h2>22. What is hoisting in JavaScript?</h2>
                 <p>
                     <strong>Hoisting</strong> is JavaScript's default behavior of moving declarations to the top of the current scope before code execution.
                 </p>
@@ -618,7 +656,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>20. What are <code>map</code>, <code>filter</code>, and <code>reduce</code> methods?</h2>
+                <h2>23. What are <code>map</code>, <code>filter</code>, and <code>reduce</code> methods?</h2>
                 <p>
                     These are powerful array methods in JavaScript used for transforming and processing data.
                 </p>
@@ -645,7 +683,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>21. What is JSON in JavaScript?</h2>
+                <h2>24. What is JSON in JavaScript?</h2>
                 <p>
                     <strong>JSON</strong> (JavaScript Object Notation) is a lightweight data format used for storing and exchanging data, especially between a server and a web application.
                 </p>
@@ -667,7 +705,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>22. What is destructuring in JavaScript?</h2>
+                <h2>25. What is destructuring in JavaScript?</h2>
                 <p>
                     <strong>Destructuring</strong> is a feature in JavaScript that allows you to unpack values from arrays or properties from objects into distinct variables.
                 </p>
@@ -700,7 +738,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>23. What is the spread operator in JavaScript?</h2>
+                <h2>26. What is the spread operator in JavaScript?</h2>
                 <p>
                     The <strong>spread operator</strong> (<code>...</code>) is used to expand or "spread" elements of an iterable (like an array or object) into individual elements.
                 </p>
@@ -734,7 +772,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>23. What is the rest operator in JavaScript?</h2>
+                <h2>27. What is the rest operator in JavaScript?</h2>
                 <p>
                     The <strong>rest operator</strong> (<code>...</code>) is used to collect multiple elements into a single array or object. It is the opposite of the <strong>spread operator</strong>.
                 </p>
@@ -769,7 +807,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>24. What is the difference between the Spread and Rest operators in JavaScript?</h2>
+                <h2>28. What is the difference between the Spread and Rest operators in JavaScript?</h2>
 
                 <p>
                     Both the <code>...</code> spread and rest operators use the same syntax but serve different purposes depending on the context.
@@ -825,7 +863,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>25. What is the <code>fetch</code> method in JavaScript?</h2>
+                <h2>29. What is the <code>fetch</code> method in JavaScript?</h2>
                 <p>
                     The <strong><code>fetch()</code></strong> method is used to make HTTP requests in JavaScript. It returns a Promise that resolves to the response of the request.
                 </p>
@@ -849,7 +887,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>26. What are the falsy values in JavaScript?</h2>
+                <h2>30. What are the falsy values in JavaScript?</h2>
                 <p>
                     <strong>Falsy values</strong> are values that are considered <code>false</code> when encountered in a Boolean context (like an <code>if</code> statement).
                 </p>
@@ -875,7 +913,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2> What is a Higher-Order Function in JavaScript?</h2>
+                <h2>31. What is a Higher-Order Function in JavaScript?</h2>
 
                 <p>
                     A <strong>Higher-Order Function (HOF)</strong> is a function that either:
@@ -933,7 +971,7 @@ const Javascriptfaqs = () => {
             </div>
 
             <div class="faq-item">
-                <h2>What is Lexical Scoping in JavaScript?</h2>
+                <h2>32.What is Lexical Scoping in JavaScript?</h2>
 
                 <p>
                     <strong>Lexical Scoping</strong> means that a function's scope is determined by its physical location in the source code (i.e., where it's written).
@@ -964,6 +1002,34 @@ const Javascriptfaqs = () => {
                     <li>Scope is defined by where the function is written — not where it's called.</li>
                     <li>Functions are bundled with the scope they were created in.</li>
                     <li>This is the basis for <strong>closures</strong> in JavaScript.</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h2>33.Common Conversion Methods in JavaScript</h2>
+
+                <ul>
+                    <li>
+                        <strong>1. Array to String:</strong> Use <code>join()</code> or <code>toString()</code> to convert an array into a string.
+                    </li>
+                    <li>
+                        <strong>2. String to Array:</strong> Use <code>split()</code> to convert a string into an array based on a separator.
+                    </li>
+                    <li>
+                        <strong>3. String to Object:</strong> Use <code>JSON.parse()</code> to parse a JSON-formatted string into an object.
+                    </li>
+                    <li>
+                        <strong>4. Object to String:</strong> Use <code>JSON.stringify()</code> to convert a JavaScript object into a string.
+                    </li>
+                    <li>
+                        <strong>5. splice():</strong> Used to add/remove items to/from an array. It modifies the original array.
+                    </li>
+                    <li>
+                        <strong>6. slice():</strong> Returns a shallow copy of a portion of an array or string. It does not modify the original.
+                    </li>
+                    <li>
+                        <strong>7. split():</strong> Splits a string into an array of substrings based on a given separator.
+                    </li>
                 </ul>
             </div>
 
