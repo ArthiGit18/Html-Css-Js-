@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Tags from './Html Tags/Tags'
+import Nav from './HomePage/Nav';
+import Footer from './HomePage/Footer';
 import SemanticTags from './Html Tags/SemanticTags'
 import FormattingTags from './Html Tags/FormattingTags'
 import HtmlElements from './Html Tags/HtmlElements'
@@ -30,27 +32,28 @@ const Html = () => {
 
     return (
         <>
-        {/* <Nav /> */}
-        <div className="html-container">
-            {/* <Nav /> */}
-           <Inspiration />
+            <Nav />
+            <div className="html-container" style={{ marginTop: "70px" }}>
+                {/* <Nav /> */}
+                <Inspiration />
 
-            {sections.map((section, index) => (
-                <div key={index} className="accordion">
-                    <button
-                        className="accordion-header"
-                        onClick={() => toggleSection(index)}
-                    >
-                        {section.title}
-                    </button>
-                    {openIndex === index && (
-                        <div className="accordion-content">
-                            {section.component}
-                        </div>
-                    )}
-                </div>
-            ))}
-        </div>
+                {sections.map((section, index) => (
+                    <div key={index} className="accordion">
+                        <button
+                            className="accordion-header"
+                            onClick={() => toggleSection(index)}
+                        >
+                            {section.title}
+                        </button>
+                        {openIndex === index && (
+                            <div className="accordion-content">
+                                {section.component}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
+            <Footer />
         </>
     )
 }

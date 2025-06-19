@@ -13,6 +13,7 @@ header h1 {
 .tags-table-section {
     max-width: 100%;
     margin: 0 auto;
+    overflow: scroll;
 }
 
 
@@ -106,7 +107,7 @@ form {
     border-radius: 10px;
 }
 
-.html_form input{
+.html_form input {
     width: 100%;
     padding: 15px !important;
     border-radius: 10px;
@@ -114,14 +115,15 @@ form {
     margin-bottom: 5px;
 }
 
-.html_form select{
+.html_form select {
     padding: 10px;
 }
 
-.html-form-checkbox{
+.html-form-checkbox {
     display: inline;
     column-gap: 5px;
 }
+
 video,
 audio,
 img {
@@ -134,6 +136,12 @@ img {
     background-color: black;
     /* color: white; */
 
+}
+
+@media(max-width:500px) {
+    .html-container {
+        padding: 30px 20px;
+    }
 }
 
 .accordion {
@@ -221,7 +229,7 @@ caption {
     font-weight: bold;
     font-size: 18px;
     padding: 10px;
-    color:#4a0983;
+    color: #4a0983;
 }
 
 .example {

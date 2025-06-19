@@ -9,7 +9,6 @@ const AboutUs = () => {
             <div className='AboutUs_wrapper'>
                 <div className='About_myself'>
                     <div className='aboutus_img'>
-                        {/* <img src="./assets/aboutUs/1.png" alt="My-image-as- anime" /> */}
                         <img src="./assets/aboutUs/5.png" alt="My-image-as- anime" />
                     </div>
                     <div className='abutous_my_content'>

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Inspiration from './Css Tags/Inspiration'
 import Selectors from './Css Tags/Selectors'
 import './Css Tags/Css.scss'
+import Nav from './HomePage/Nav';
+import Footer from './HomePage/Footer';
 import CssAdding from './Css Tags/CssAdding'
 import Colors from './Css Tags/Colors'
 import TextProperty from './Css Tags/TextProperty'
@@ -41,26 +43,31 @@ const Css = () => {
         setOpenIndex(openIndex === index ? null : index)
     }
     return (
-        <div className="html-container">
-            <Inspiration />
+        <>
+            <Nav />
+
+            <div className="html-container" style={{ marginTop: "70px" }}>
+                <Inspiration />
 
 
-            {sections.map((section, index) => (
-                <div key={index} className="accordion">
-                    <button
-                        className="accordion-header"
-                        onClick={() => toggleSection(index)}
-                    >
-                        {section.title}
-                    </button>
-                    {openIndex === index && (
-                        <div className="accordion-content">
-                            {section.component}
-                        </div>
-                    )}
-                </div>
-            ))}
-        </div>
+                {sections.map((section, index) => (
+                    <div key={index} className="accordion">
+                        <button
+                            className="accordion-header"
+                            onClick={() => toggleSection(index)}
+                        >
+                            {section.title}
+                        </button>
+                        {openIndex === index && (
+                            <div className="accordion-content">
+                                {section.component}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
+            <Footer />
+        </>
     )
 }
 

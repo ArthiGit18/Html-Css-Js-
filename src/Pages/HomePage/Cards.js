@@ -1,11 +1,21 @@
-import React from 'react'
-
+import React, {useRef, useEffect} from 'react'
+const MAX_LENGTH = 60;
 const Cards = () => {
+     const faqContainerRef = useRef(null);
+
+    useEffect(() => {
+        const paragraphs = faqContainerRef.current.querySelectorAll('p');
+        paragraphs.forEach(p => {
+            if (p.textContent.length > MAX_LENGTH) {
+                p.textContent = p.textContent.slice(0, MAX_LENGTH) + '...';
+            }
+        });
+    }, []);
     return (
         <div className='cards_wrapper'>
             <div className='container'>
                 <h2>Our Services</h2>
-                <div className='cards'>
+                <div className='cards' ref={faqContainerRef}>
                     <div className='card'>
                         <a href="/html-tags"><div className='card_img'>
                             <img src='./assets/cards/1.png' alt='Service Icon' />

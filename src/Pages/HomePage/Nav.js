@@ -6,6 +6,9 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
@@ -24,6 +27,7 @@ const Nav = () => {
         return userData ? JSON.parse(userData) : null;
     });
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
 
     const [loginData, setLoginData] = useState({ username: '', password: '' });
@@ -105,12 +109,25 @@ const Nav = () => {
                     <div className='nav_logo'>
                         <a href='/'><img src="./eduTechB.png" alt="logo" /></a>
                     </div>
-                    <ul className='nav_links'>
+
+                    {/* Hamburger Icon (only visible under 700px) */}
+                    <div className="hamburger_icon" onClick={() => setMenuOpen(!menuOpen)}>
+                        {menuOpen ? <CloseIcon style={{ color: 'white', fontSize: 30 }} /> : <MenuIcon style={{ color: 'white', fontSize: 30 }} />}
+                    </div>
+
+                    <ul className={`nav_links ${menuOpen ? 'show_menu' : ''}`}>
                         <li><a href='/'>Home</a></li>
                         <li><a href='/about-us-our-team'>About</a></li>
                         <li><a href='/service'>Services</a></li>
                         <li><a href='/contact-us-our-team'>Contact</a></li>
                     </ul>
+
+                    {/* <ul className='nav_links'>
+                        <li><a href='/'>Home</a></li>
+                        <li><a href='/about-us-our-team'>About</a></li>
+                        <li><a href='/service'>Services</a></li>
+                        <li><a href='/contact-us-our-team'>Contact</a></li>
+                    </ul> */}
 
                     <div className='nav_buttons'>
                         {user ? (
@@ -161,7 +178,7 @@ const Nav = () => {
                                             Home
                                         </a>
                                         <button
-                                        className='Logout_btn'
+                                            className='Logout_btn'
                                             onClick={handleLogout}
                                             style={{
                                                 width: '100%',

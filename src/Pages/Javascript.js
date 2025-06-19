@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Inspiration from './Javascript Folder/Inspiration'
 import "./Javascript Folder/js.scss";
+import Nav from './HomePage/Nav';
+import Footer from './HomePage/Footer';
 import Concepts from './Javascript Folder/Concepts';
 import Variables from './Javascript Folder/Variables';
 import Datatypes from './Javascript Folder/Datatypes';
@@ -35,8 +37,8 @@ const Javascript = () => {
 
     return (
         <>
-            {/* <Nav /> */}
-            <div className="html-container">
+            <Nav />
+            <div className="html-container" style={{marginTop:"70px"}}>
                 {/* <Nav /> */}
                 <Inspiration />
 
@@ -56,6 +58,7 @@ const Javascript = () => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </>
     )
 }

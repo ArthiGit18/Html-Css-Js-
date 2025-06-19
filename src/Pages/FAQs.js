@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 import Javascriptfaqs from './FAQs/Javascriptfaqs'
+import HTMLfaqs from './FAQs/HTMLfaqs'
+import Nav from './HomePage/Nav'
+import Footer from './HomePage/Footer'
 
 
 const sections = [
     { title: "Javascript - Important FAQs", component: <Javascriptfaqs /> },
+    { title: "HTML - Important FAQs", component: <HTMLfaqs /> },
 ]
 const FAQs = () => {
     const [openIndex, setOpenIndex] = useState(null)
@@ -14,8 +18,8 @@ const FAQs = () => {
 
     return (
         <>
-            {/* <Nav /> */}
-            <div className="html-container">
+        <Nav />
+            <div className="html-container" style={{marginTop:"100px"}}>
 
 
                 {sections.map((section, index) => (
@@ -34,6 +38,7 @@ const FAQs = () => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </>
     )
 }
