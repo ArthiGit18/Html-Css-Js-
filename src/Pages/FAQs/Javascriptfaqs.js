@@ -1057,6 +1057,9 @@ const Javascriptfaqs = () => {
                             <li>
                                 <strong>7. split():</strong> Splits a string into an array of substrings based on a given separator.
                             </li>
+                            <li>
+                                <strong>8. includes():</strong> method checks if a value exists in an array or string and returns a boolean
+                            </li>
                         </ul>
                     </div>
                 </div>
