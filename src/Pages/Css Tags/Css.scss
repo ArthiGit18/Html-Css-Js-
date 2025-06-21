@@ -545,6 +545,7 @@ $section-margin: 2rem;
         margin-top: 1rem;
         border-collapse: collapse;
         font-size: 0.95rem;
+        overflow: scroll;
 
         th,
         td {
@@ -623,6 +624,7 @@ $section-margin: 2rem;
         width: 100%;
         margin: 1rem 0;
         border-collapse: collapse;
+        overflow: scroll;
 
         th,
         td {
