@@ -21,14 +21,7 @@ const HTMLfaqs = () => {
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
                 className='faqs_input'
-                // style={{
-                //     padding: '8px 12px',
-                //     marginBottom: '20px',
-                //     width: '100%',
-                //     maxWidth: '400px',
-                //     borderRadius: '4px',
-                //     border: '1px solid #ccc'
-                // }}
+            
             />
             <div ref={faqContainerRef}>
                 <div className="faq-item">
@@ -110,6 +103,189 @@ const HTMLfaqs = () => {
                         <li><code>&lt;footer&gt;</code> – Page footer</li>
                     </ul>
                 </div>
+
+                <div class="faq-item">
+                    <h2>10.&lt;b&gt; vs &lt;strong&gt; Tag</h2>
+
+                    <p><b>This is bold text using &lt;b&gt;</b> — used only for visual styling.</p>
+
+                    <p><strong>This is bold text using &lt;strong&gt;</strong> — used to give strong importance semantically.</p>
+                    <p>Always prefer &lt;strong&gt; over &lt;b&gt; when conveying meaning. Screen readers and SEO tools recognize &lt;strong&gt;, but not &lt;b&gt;.</p>
+                </div>
+                <div class="faq-item">
+                    <h2>11.&lt;form&gt; Tag Inner Elements</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;input&gt;</td>
+                                <td>To accept user input (text, email, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;label&gt;</td>
+                                <td>Describes the input field</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;textarea&gt;</td>
+                                <td>Multiline input</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;select&gt;</td>
+                                <td>Dropdown options</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;option&gt;</td>
+                                <td>Options inside &lt;select&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;button&gt;</td>
+                                <td>To submit or reset the form</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;fieldset&gt;</td>
+                                <td>Groups related form elements</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;legend&gt;</td>
+                                <td>Caption for &lt;fieldset&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="faq-item">
+                    <h2>12.Commonly Used Attributes in &lt;input&gt; Tag</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>type</td>
+                                <td>Specifies the type of input (e.g., text, email, password, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>Assigns a name to the input for form data submission</td>
+                            </tr>
+                            <tr>
+                                <td>id</td>
+                                <td>Gives the input a unique identifier (used with label's <code>for</code>)</td>
+                            </tr>
+                            <tr>
+                                <td>value</td>
+                                <td>Sets the initial value of the input field</td>
+                            </tr>
+                            <tr>
+                                <td>placeholder</td>
+                                <td>Shows temporary text inside the input field</td>
+                            </tr>
+                            <tr>
+                                <td>required</td>
+                                <td>Makes the field mandatory to fill before form submission</td>
+                            </tr>
+                            <tr>
+                                <td>readonly</td>
+                                <td>Makes the input read-only (user cannot change its value)</td>
+                            </tr>
+                            <tr>
+                                <td>disabled</td>
+                                <td>Disables the input so it's uneditable and not submitted</td>
+                            </tr>
+                            <tr>
+                                <td>maxlength</td>
+                                <td>Specifies the maximum number of characters allowed</td>
+                            </tr>
+                            <tr>
+                                <td>min / max</td>
+                                <td>Defines min and max values for number/date inputs</td>
+                            </tr>
+                            <tr>
+                                <td>pattern</td>
+                                <td>Validates input against a regular expression</td>
+                            </tr>
+                            <tr>
+                                <td>autocomplete</td>
+                                <td>Suggests previously entered values (on/off)</td>
+                            </tr>
+                            <tr>
+                                <td>autofocus</td>
+                                <td>Focuses on the input automatically on page load</td>
+                            </tr>
+                            <tr>
+                                <td>step</td>
+                                <td>Specifies interval for numeric or date input types</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="faq-item">
+                    <h2>13.&lt;div&gt; vs &lt;span&gt; Tag</h2>
+
+                    <div class="box">
+                        This is a &lt;div&gt; element — it's a block-level element.
+                    </div>
+
+                    <p>
+                        This is a paragraph with a <span class="highlight">&lt;span&gt; tag</span>
+                        used to highlight part of a sentence.
+                    </p>
+
+                    <ul>
+                        <li>Use <code>&lt;div&gt;</code> when grouping larger blocks like <strong>sections</strong>, <strong>forms</strong>, <strong>cards</strong>, etc.</li>
+                        <li>Use <code>&lt;span&gt;</code> for inline elements like <strong>highlighting words</strong> or <strong>styling part of a sentence</strong>.</li>
+                        <li>Think of <code>&lt;div&gt;</code> as a <em>container</em> and <code>&lt;span&gt;</code> as an <em>inline wrapper</em>.</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h2>14.Types of List Tags in HTML</h2>
+
+                    <p>A list in HTML is used to group related items together. HTML provides different types of lists for ordered, unordered, and descriptive content.</p>
+
+                    <ul>
+                        <li><code>&lt;ul&gt;</code> – Unordered List (bulleted)</li>
+                        <li><code>&lt;ol&gt;</code> – Ordered List (numbered)</li>
+                        <li><code>&lt;dl&gt;</code> – Description List (term-description pair)</li>
+                    </ul>
+
+                    <h3>Examples:</h3>
+
+                    <p><strong>1. &lt;ul&gt; - Unordered List</strong></p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+
+                    <p><strong>2. &lt;ol&gt; - Ordered List</strong></p>
+                    <ol>
+                        <li>Wake up</li>
+                        <li>Code</li>
+                        <li>Sleep</li>
+                    </ol>
+
+                    <p><strong>3. &lt;dl&gt; - Description List</strong></p>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Standard markup language for web pages.</dd>
+                        <dt>CSS</dt>
+                        <dd>Style sheet language used for describing the look of a document.</dd>
+                    </dl>
+                </div>
+
             </div>
 
         </section>

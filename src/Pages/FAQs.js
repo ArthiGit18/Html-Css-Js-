@@ -3,11 +3,15 @@ import Javascriptfaqs from './FAQs/Javascriptfaqs'
 import HTMLfaqs from './FAQs/HTMLfaqs'
 import Nav from './HomePage/Nav'
 import Footer from './HomePage/Footer'
+import CSSfaqs from './FAQs/CSSfaqs'
+import Reactfaqs from './FAQs/Reactfaqs'
 
 
 const sections = [
     { title: "Javascript - Important FAQs", component: <Javascriptfaqs /> },
     { title: "HTML - Important FAQs", component: <HTMLfaqs /> },
+    { title: "CSS - Important FAQs", component: <CSSfaqs /> },
+    { title: "React - Important FAQs", component: <Reactfaqs /> },
 ]
 const FAQs = () => {
     const [openIndex, setOpenIndex] = useState(null)
