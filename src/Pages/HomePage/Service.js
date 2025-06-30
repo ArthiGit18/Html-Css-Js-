@@ -26,7 +26,7 @@ const Service = () => {
                     <div className='cards'  ref={faqContainerRef}>
                         <div className='card'>
                             <a href="/html-tags"><div className='card_img'>
-                                <img src='./assets/cards/1.png' alt='Service Icon' />
+                                <img src=' ./assets/icons/html/1.png' alt='Service Icon' />
                             </div></a>
                             <h2>HTML - HyperText Markup Language</h2>
                             <p>
@@ -35,7 +35,7 @@ const Service = () => {
                         </div>
                         <div className='card'>
                             <a href="/css-tags"><div className='card_img'>
-                                <img src='./assets/cards/2.png' alt='Service Icon' />
+                                <img src=' ./assets/icons/html/2.png' alt='Service Icon' />
                             </div></a>
                             <h2>CSS - Cascading Style Sheets</h2>
                             <p>
@@ -45,7 +45,7 @@ const Service = () => {
                         <div className='card'>
                             <a href="/javascript-elements-functions">
                                 <div className='card_img'>
-                                    <img src='./assets/cards/1.png' alt='Service Icon' />
+                                    <img src=' ./assets/icons/html/3.png' alt='Service Icon' />
                                 </div>
                             </a>
                             <h2>JavaScript</h2>
@@ -56,12 +56,23 @@ const Service = () => {
                         <div className='card'>
                             <a href="/important-Faqs">
                                 <div className='card_img'>
-                                    <img src='./assets/cards/1.png' alt='Service Icon' />
+                                    <img src=' ./assets/icons/html/5.png' alt='Service Icon' />
                                 </div>
                             </a>
                             <h2>FAQs</h2>
                             <p>
-                                Important FAQs for HTML, CSS, JAVASCRIPT
+                                Important FAQs for HTML, CSS, JAVASCRIPT, React JS
+                            </p>
+                        </div>
+                        <div className='card'>
+                            <a href="/number-programming">
+                                <div className='card_img'>
+                                    <img src='./assets/icons/html/6.png' alt='Service Icon' />
+                                </div>
+                            </a>
+                            <h2>Number Programming</h2>
+                            <p>
+                                Important Concepts on Number Programming fro Javascript and Java
                             </p>
                         </div>
                     </div>

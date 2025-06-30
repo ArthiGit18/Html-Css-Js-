@@ -15,7 +15,7 @@ const Reactfaqs = () => {
 
     return (
         <section className="faq-container">
-            <h1>CSS Interview Questions</h1>
+            <h1>REACT Interview Questions</h1>
             <input
                 type="text"
                 placeholder="Search questions..."
