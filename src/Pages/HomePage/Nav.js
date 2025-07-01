@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
@@ -107,7 +108,7 @@ const Nav = () => {
             <div className='container'>
                 <nav className='nav_items'>
                     <div className='nav_logo'>
-                        <a href='/'><img src="./eduTechB.png" alt="logo" /></a>
+                        <NavLink to='/'><img src="./eduTechB.png" alt="logo" /></NavLink>
                     </div>
 
                     {/* Hamburger Icon (only visible under 700px) */}
@@ -116,17 +117,17 @@ const Nav = () => {
                     </div>
 
                     <ul className={`nav_links ${menuOpen ? 'show_menu' : ''}`}>
-                        <li><a href='/'>Home</a></li>
-                        <li><a href='/about-us-our-team'>About</a></li>
-                        <li><a href='/service'>Services</a></li>
-                        <li><a href='/contact-us-our-team'>Contact</a></li>
+                        <li><NavLink to='/'>Home</NavLink></li>
+                        <li><NavLink to='/about-us-our-team'>About</NavLink></li>
+                        <li><NavLink to='/service'>Services</NavLink></li>
+                        <li><NavLink to='/contact-us-our-team'>Contact</NavLink></li>
                     </ul>
 
                     {/* <ul className='nav_links'>
-                        <li><a href='/'>Home</a></li>
-                        <li><a href='/about-us-our-team'>About</a></li>
-                        <li><a href='/service'>Services</a></li>
-                        <li><a href='/contact-us-our-team'>Contact</a></li>
+                        <li><NavLink to='/'>Home</NavLink></li>
+                        <li><NavLink to='/about-us-our-team'>About</NavLink></li>
+                        <li><NavLink to='/service'>Services</NavLink></li>
+                        <li><NavLink to='/contact-us-our-team'>Contact</NavLink></li>
                     </ul> */}
 
                     <div className='nav_buttons'>

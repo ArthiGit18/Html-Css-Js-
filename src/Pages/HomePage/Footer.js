@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,26 +14,26 @@ const Footer = () => {
                 <div className="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="/service">Courses</a></li>
-                        <li><a href="/about-us-our-team">About Us</a></li>
-                        <li><a href="/service">Blogs</a></li>
-                        <li><a href="/contact-us-our-team">Contact</a></li>
+                        <li><NavLink to="/service">Courses</NavLink></li>
+                        <li><NavLink to="/about-us-our-team">About Us</NavLink></li>
+                        <li><NavLink to="/service">Blogs</NavLink></li>
+                        <li><NavLink to="/contact-us-our-team">Contact</NavLink></li>
                     </ul>
                 </div>
 
                 <div className='footer-links'>
                     <h3>Our Course</h3>
                     <ul>
-                        <li><a href="/service">HTML</a></li>
-                        <li><a href="/service">CSS</a></li>
-                        <li><a href="/service">JAVASCRIPT</a></li>
-                        <li><a href="/service">FAQS</a></li>
+                        <li><NavLink to="/service">HTML</NavLink></li>
+                        <li><NavLink to="/service">CSS</NavLink></li>
+                        <li><NavLink to="/service">JAVASCRIPT</NavLink></li>
+                        <li><NavLink to="/service">FAQS</NavLink></li>
                     </ul>
                 </div>
 
                 <div className="footer-contact">
                     <h3>Contact</h3>
-                    <p>📧 info@edutech.com</p>
+                    <p>📧 arthiar180.com</p>
                     <p>📍 Chennai, Tamil Nadu</p>
                     <p>📞 +91 6379424101</p>
                 </div>
@@ -40,10 +41,10 @@ const Footer = () => {
                 <div className="footer-social">
                     <h3>Follow Us</h3>
                     <div className="social-icons">
-                        <a href="/"><i className="fab fa-facebook-f"></i></a>
-                        <a href="/"><i className="fab fa-instagram"></i></a>
-                        <a href="/"><i className="fab fa-linkedin-in"></i></a>
-                        <a href="/"><i className="fab fa-twitter"></i></a>
+                        <NavLink to="/"><i className="fab fa-facebook-f"></i></NavLink>
+                        <NavLink to="/"><i className="fab fa-instagram"></i></NavLink>
+                        <NavLink to="/"><i className="fab fa-linkedin-in"></i></NavLink>
+                        <NavLink to="/"><i className="fab fa-twitter"></i></NavLink>
                     </div>
                 </div>
             </div>

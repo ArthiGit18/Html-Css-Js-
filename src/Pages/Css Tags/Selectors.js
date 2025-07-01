@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const Selectors = () => {
     return (
@@ -120,7 +121,7 @@ const Selectors = () => {
                             <td>:hover</td>
                             <td>Style on mouse hover</td>
                             <td><code>a:hover</code></td>
-                            <td><a href="/">Hover over me</a></td>
+                            <td><NavLink to="/">Hover over me</NavLink></td>
                         </tr>
                         <tr>
                             <td>:first-child</td>

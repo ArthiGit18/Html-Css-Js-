@@ -29,6 +29,7 @@ const Contact = () => {
     <div className='contact_wrapper'>
       <div className='container'>
         <h2>Contact Us</h2>
+        <p style={{color:"white", marginBottom:"10px"}}>We’d Love to Hear From You!</p>
         <form className='contact_form' onSubmit={handleSubmit}>
           <label htmlFor='name'>Name:</label>
           <input type='text' id='name' name='name' required />
