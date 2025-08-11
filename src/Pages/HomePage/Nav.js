@@ -238,16 +238,14 @@ const Nav = () => {
                             value={loginData.password}
                             onChange={handleLoginChange}
                         />
-                        <button type="submit" disabled={loadingLogin}>
-                            {loadingLogin ? <CircularProgress size={20} color="inherit" /> : 'Login'}
-
-                        </button>
-
+                        <div className='form_actions'>
+                            <button onClick={closeLogin}>Close</button>
+                            <button type="submit" disabled={loadingLogin}>
+                                {loadingLogin ? <CircularProgress size={20} color="inherit" /> : 'Login'}
+                            </button>
+                        </div>
                     </form>
                 </DialogContent>
-                <DialogActions>
-                    <Button onClick={closeLogin}>Close</Button>
-                </DialogActions>
             </BootstrapDialog>
 
             {/* Sign Up Dialog */}
@@ -284,15 +282,15 @@ const Nav = () => {
                             value={signupData.password}
                             onChange={handleSignupChange}
                         />
-                        <button type="submit" disabled={loadingSignup}>
-                            {loadingSignup ? 'Signing up...' : 'Sign Up'}
-                        </button>
+                        <div className='form_actions'>
+                            <button onClick={closeSignup}>Close</button>
+                            <button type="submit" disabled={loadingSignup}>
+                                {loadingSignup ? 'Signing up...' : 'Sign Up'}
+                            </button>
+                        </div>
 
                     </form>
                 </DialogContent>
-                <DialogActions>
-                    <Button onClick={closeSignup}>Close</Button>
-                </DialogActions>
             </BootstrapDialog>
         </div>
     );

@@ -152,8 +152,6 @@
     }
 }
 
-
-
 .banner_wrapper {
     background-image: url("../public/assets/banner/2.jpg");
     height: 100vh;
@@ -925,8 +923,11 @@
     padding: 20px;
     box-shadow: #bd34fe 15px 15px 15px -12px !important;
     color: #b005ff !important;
-    // background-color: #333 !important;
+    background-color: #4f4059 !important;
 
+    form{
+        background-color: #4f4059 !important;
+    }
     .dialog_title {
         font-weight: 700;
         text-shadow: none;
@@ -960,13 +961,14 @@
             color: #0a0a23;
         }
     }
+
+    .form_actions{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
-// Logout_btn
-// .Logout_btn:hover{
-//     background-color: lightcoral !important;
-//     color: white;
-// }
 
 .box {
     background-color: #e0f7fa;
