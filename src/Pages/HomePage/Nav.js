@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
-import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useAuthModal } from '../../context/AuthModalContext';
@@ -134,6 +132,7 @@ const Nav = () => {
                         <li><NavLink to='/about-us-our-team'>About</NavLink></li>
                         <li><NavLink to='/service'>Services</NavLink></li>
                         <li><NavLink to='/contact-us-our-team'>Contact</NavLink></li>
+                        <li><NavLink to='https://edutechmock.netlify.app/'>EduTech - Mock App</NavLink></li>
                     </ul>
 
                     <div className='nav_buttons'>
